@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Network Commander</string>
+
+    <!-- التنقل والشريط العلوي -->
+    <string name="nav_dashboard">الرئيسية</string>
+    <string name="nav_queries">السجل</string>
+    <string name="nav_clients">الأجهزة</string>
+    <string name="nav_rules">القواعد</string>
+    <string name="nav_tools">الأدوات</string>
+    <string name="nav_settings">الإعداد</string>
+    <string name="action_refresh">تحديث</string>
+    <string name="action_about">عن التطبيق وإخلاء المسؤولية</string>
+    <string name="status_simulation_mode">وضع المحاكاة الحي</string>
+    <string name="status_connected">متصل</string>
+    <string name="status_disconnected">غير متصل</string>
+
+    <!-- لوحة التحكم -->
+    <string name="dash_total_queries">إجمالي الاستعلامات</string>
+    <string name="dash_queries_blocked">الاستعلامات المحجوبة</string>
+    <string name="dash_percent_blocked">نسبة الحجب</string>
+    <string name="dash_active_clients">الأجهزة النشطة</string>
+    <string name="dash_domains_blocked">النطاقات في قائمة الحجب</string>
+    <string name="dash_blocking_status">حجب إعلانات وتعقب DNS</string>
+    <string name="dash_blocking_enabled">الحماية مفعلة</string>
+    <string name="dash_blocking_disabled">الحماية معطلة</string>
+    <string name="dash_blocking_paused">إيقاف مؤقت (%1$d ثانية)</string>
+    <string name="dash_btn_enable">تفعيل</string>
+    <string name="dash_btn_disable">تعطيل</string>
+    <string name="dash_btn_pause_5m">إيقاف 5 د</string>
+    <string name="dash_btn_pause_30m">إيقاف 30 د</string>
+    <string name="dash_chart_title">نشاط استعلامات DNS لآخر 24 ساعة</string>
+    <string name="dash_chart_legend_total">إجمالي الاستعلامات</string>
+    <string name="dash_chart_legend_blocked">الاستعلامات المحجوبة</string>
+    <string name="dash_nas_card_title">حالة جهاز التخزين الشبكي (NAS)</string>
+    <string name="dash_nas_online">متصل بالشبكة</string>
+    <string name="dash_nas_offline">غير متصل</string>
+    <string name="dash_nas_ping">فحص الاتصال (Ping)</string>
+    <string name="dash_nas_wol">إيقاظ الجهاز (Wake-on-LAN)</string>
+
+    <!-- سجل الاستعلامات -->
+    <string name="queries_title">سجل استعلامات DNS المباشر</string>
+    <string name="queries_search_hint">ابحث بالنطاق أو عنوان IP للجهاز...</string>
+    <string name="queries_filter_all">الكل (%1$d)</string>
+    <string name="queries_filter_blocked">المحجوبة (%1$d)</string>
+    <string name="queries_filter_allowed">المسموحة (%1$d)</string>
+    <string name="queries_filter_cached">المخزنة محلياً (%1$d)</string>
+    <string name="queries_empty">لا توجد استعلامات مطابقة للبحث</string>
+    <string name="query_detail_title">تفاصيل استعلام DNS</string>
+    <string name="query_detail_domain">اسم النطاق المطلوب</string>
+    <string name="query_detail_client">الجهاز المصدر</string>
+    <string name="query_detail_status">حالة التصفية</string>
+    <string name="query_detail_type">نوع السجل</string>
+    <string name="query_detail_reply">الرد / عنوان الحجب Sinkhole</string>
+    <string name="query_detail_response_time">زمن الاستجابة</string>
+    <string name="query_detail_upstream">خادم DNS المصدر</string>
+    <string name="query_detail_dnssec">أمان DNSSEC</string>
+    <string name="query_action_block">حجب النطاق (Blacklist)</string>
+    <string name="query_action_allow">السماح بالنطاق (Whitelist)</string>
+    <string name="query_action_close">إغلاق</string>
+
+    <!-- الأجهزة المتصلة -->
+    <string name="clients_title">الأجهزة المتصلة بالشبكة المحلية</string>
+    <string name="clients_subtitle">الأجهزة التي توجه استعلامات DNS عبر خادم Pi-hole على الـ NAS</string>
+    <string name="clients_queries_count">%1$d استعلام</string>
+    <string name="clients_blocked_count">%1$d محجوب (%2$.1f%%)</string>
+    <string name="clients_edit_nickname">تعديل الاسم المستعار للجهاز</string>
+    <string name="clients_save_nickname">حفظ</string>
+    <string name="clients_cancel">إلغاء</string>
+
+    <!-- قواعد النطاقات وقوائم الحجب -->
+    <string name="rules_title">إدارة قوائم وقواعد الحجب</string>
+    <string name="rules_tab_custom">قواعد مخصصة (%1$d)</string>
+    <string name="rules_tab_blocklists">قوائم الجاذبية Gravity (%1$d)</string>
+    <string name="rules_add_btn">إضافة قاعدة جديدة</string>
+    <string name="rules_update_gravity">تحديث قواعد الجاذبية (Gravity Update)</string>
+    <string name="rules_dialog_title">إضافة نطاق للقواعد</string>
+    <string name="rules_input_domain">اسم النطاق أو نمط Regex</string>
+    <string name="rules_input_comment">ملاحظة / وصف اختياري</string>
+    <string name="rules_type_exact_black">حجب دقيق (Exact Blacklist)</string>
+    <string name="rules_type_regex_black">حجب بنمط تعبيري (Regex Deny)</string>
+    <string name="rules_type_exact_white">سماح دقيق (Exact Whitelist)</string>
+    <string name="rules_type_regex_white">سماح بنمط تعبيري (Regex Allow)</string>
+    <string name="rules_confirm_add">إضافة القاعدة</string>
+
+    <!-- الأدوات والتشخيصات -->
+    <string name="tools_title">أدوات تشخيص الشبكة و NAS</string>
+    <string name="tools_ping_btn">إرسال فحص اتصال (Ping)</string>
+    <string name="tools_wol_btn">إرسال حزمة الإيقاظ (Wake-on-LAN)</string>
+    <string name="tools_open_web_admin">فتح واجهة الويب Pi-hole Admin</string>
+    <string name="tools_open_api_docs">فتح توثيق الـ API (/api/docs)</string>
+    <string name="tools_quick_links">روابط الوصول السريع للخادم</string>
+
+    <!-- شاشة الإعدادات -->
+    <string name="settings_title">إعداد الاتصال بـ Pi-hole و NAS</string>
+    <string name="settings_host_label">عنوان IP أو اسم مضيف Pi-hole</string>
+    <string name="settings_port_label">المنفذ (Port)</string>
+    <string name="settings_https_label">استخدام بروتوكول HTTPS المشفر</string>
+    <string name="settings_password_label">كلمة مرور الـ API / تطبيق Pi-hole</string>
+    <string name="settings_password_hint">تُحفظ مشفرة بأمان عبر EncryptedSharedPreferences</string>
+    <string name="settings_nas_ip_label">عنوان IP الخاص بالـ NAS (اختياري)</string>
+    <string name="settings_nas_mac_label">عنوان MAC للـ NAS (لحزمة Wake-on-LAN)</string>
+    <string name="settings_nas_name_label">اسم جهاز الـ NAS في الواجهة</string>
+    <string name="settings_test_btn">اختبار الاتصال بالخادم (/api/auth)</string>
+    <string name="settings_save_btn">حفظ الإعدادات</string>
+    <string name="settings_demo_mode">وضع المحاكاة التفاعلية (بدون خادم)</string>
+    <string name="settings_demo_mode_desc">محاكاة استعلامات DNS وبيانات حية تفاعلية عند عدم الاتصال بالشبكة المحلية</string>
+    <string name="settings_test_success">تم الاتصال بنجاح بـ %1$s خلال %2$d مللي ثانية</string>
+    <string name="settings_test_failed">فشل الاتصال: %1$s</string>
+
+    <!-- شاشة عن التطبيق وإخلاء المسؤولية -->
+    <string name="about_title">عن التطبيق والشفافية الأمنية</string>
+    <string name="about_ownership_heading">إدارة الشبكة الشخصية والمحلية</string>
+    <string name="about_ownership_body">تطبيق Network Commander هو أداة شخصية لإدارة ومراقبة شبكة الواي فاي المنزلية أو المكتبية المملوكة للمستخدم حصرًا، من خلال التكامل مع خادم Pi-hole المستضاف محليًا على جهاز التخزين الشبكي (NAS). المستخدم هو المالك والمسؤول الوحيد عن إدارة شبكته وأجهزته الخاصة.</string>
+    <string name="about_encryption_heading">تسجيل أسماء النطاقات والبيانات المشفرة</string>
+    <string name="about_encryption_body">شفافية تقنية هامة: خادم Pi-hole يقوم فقط بتسجيل ومعالجة أسماء النطاقات المطلوبة (DNS Domain Names مثل example.com)، ولا يمكنه ولا يستطيع التطبيق بأي شكل الوصول إلى محتوى ترافيك البيانات المشفر (HTTPS / TLS) مثل نصوص الرسائل، الفيديوهات، كلمات المرور، أو محتويات البحث المشفرة.</string>
+    <string name="about_telemetry_heading">آلية عمل قراءة البيانات</string>
+    <string name="about_telemetry_body">التطبيق لا يقوم باعتراض أو التقاط ترافيك الأجهزة الأخرى بنفسه، بل يقرأ إحصائيات وسجلات استعلامات DNS المجمعة مباشرة عبر واجهة البرمجة REST API الرسمية لخادم Pi-hole على /api/stats/summary و /api/queries عبر الشبكة المحلية.</string>
+</resources>

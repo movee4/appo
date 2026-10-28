@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Network Commander</string>
+
+    <!-- Navigation & App Bar -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_queries">Query Log</string>
+    <string name="nav_clients">Devices</string>
+    <string name="nav_rules">Rules</string>
+    <string name="nav_tools">Tools</string>
+    <string name="nav_settings">Setup</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_about">About &amp; Disclaimer</string>
+    <string name="status_simulation_mode">Live Simulation Mode</string>
+    <string name="status_connected">Connected</string>
+    <string name="status_disconnected">Disconnected</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dash_total_queries">Total Queries</string>
+    <string name="dash_queries_blocked">Queries Blocked</string>
+    <string name="dash_percent_blocked">Percent Blocked</string>
+    <string name="dash_active_clients">Active Devices</string>
+    <string name="dash_domains_blocked">Domains on Blocklist</string>
+    <string name="dash_blocking_status">DNS Ad Blocking</string>
+    <string name="dash_blocking_enabled">Protection Active</string>
+    <string name="dash_blocking_disabled">Protection Disabled</string>
+    <string name="dash_blocking_paused">Temporarily Paused (%1$ds)</string>
+    <string name="dash_btn_enable">Enable</string>
+    <string name="dash_btn_disable">Disable</string>
+    <string name="dash_btn_pause_5m">Pause 5m</string>
+    <string name="dash_btn_pause_30m">Pause 30m</string>
+    <string name="dash_chart_title">24-Hour DNS Query Activity</string>
+    <string name="dash_chart_legend_total">Total Queries</string>
+    <string name="dash_chart_legend_blocked">Blocked Queries</string>
+    <string name="dash_nas_card_title">Local NAS Hardware Status</string>
+    <string name="dash_nas_online">Online</string>
+    <string name="dash_nas_offline">Offline</string>
+    <string name="dash_nas_ping">Ping Host</string>
+    <string name="dash_nas_wol">Wake-on-LAN</string>
+
+    <!-- Query Log Screen -->
+    <string name="queries_title">DNS Query Telemetry</string>
+    <string name="queries_search_hint">Search domain name or client IP...</string>
+    <string name="queries_filter_all">All (%1$d)</string>
+    <string name="queries_filter_blocked">Blocked (%1$d)</string>
+    <string name="queries_filter_allowed">Allowed (%1$d)</string>
+    <string name="queries_filter_cached">Cached (%1$d)</string>
+    <string name="queries_empty">No matching DNS queries found</string>
+    <string name="query_detail_title">DNS Query Details</string>
+    <string name="query_detail_domain">Queried Domain</string>
+    <string name="query_detail_client">Source Device</string>
+    <string name="query_detail_status">Filter Resolution</string>
+    <string name="query_detail_type">Record Type</string>
+    <string name="query_detail_reply">DNS Sinkhole / Answer</string>
+    <string name="query_detail_response_time">Response Latency</string>
+    <string name="query_detail_upstream">Upstream Resolver</string>
+    <string name="query_detail_dnssec">DNSSEC Integrity</string>
+    <string name="query_action_block">Blacklist Domain</string>
+    <string name="query_action_allow">Whitelist Domain</string>
+    <string name="query_action_close">Close</string>
+
+    <!-- Clients / Devices Screen -->
+    <string name="clients_title">Connected Network Devices</string>
+    <string name="clients_subtitle">Devices forwarding DNS requests through your NAS Pi-hole server</string>
+    <string name="clients_queries_count">%1$d requests</string>
+    <string name="clients_blocked_count">%1$d blocked (%2$.1f%%)</string>
+    <string name="clients_edit_nickname">Edit Device Nickname</string>
+    <string name="clients_save_nickname">Save</string>
+    <string name="clients_cancel">Cancel</string>
+
+    <!-- Domain Rules & Blocklists -->
+    <string name="rules_title">Filter Lists &amp; Rules</string>
+    <string name="rules_tab_custom">Custom Rules (%1$d)</string>
+    <string name="rules_tab_blocklists">Adlists / Gravity (%1$d)</string>
+    <string name="rules_add_btn">Add Custom Rule</string>
+    <string name="rules_update_gravity">Update Gravity (Gravity Run)</string>
+    <string name="rules_dialog_title">Add Domain Rule</string>
+    <string name="rules_input_domain">Domain or Regex Pattern</string>
+    <string name="rules_input_comment">Comment / Description</string>
+    <string name="rules_type_exact_black">Exact Blacklist (Deny)</string>
+    <string name="rules_type_regex_black">Regex Blacklist (Wildcard Deny)</string>
+    <string name="rules_type_exact_white">Exact Whitelist (Allow)</string>
+    <string name="rules_type_regex_white">Regex Whitelist (Allow)</string>
+    <string name="rules_confirm_add">Add Rule</string>
+
+    <!-- Diagnostics / Tools -->
+    <string name="tools_title">Network Diagnostics &amp; NAS</string>
+    <string name="tools_ping_btn">Send ICMP / Socket Ping</string>
+    <string name="tools_wol_btn">Send Wake-on-LAN Packet</string>
+    <string name="tools_open_web_admin">Open Pi-hole Web Admin</string>
+    <string name="tools_open_api_docs">Open API Documentation (/api/docs)</string>
+    <string name="tools_quick_links">Server Endpoints</string>
+
+    <!-- Settings / Setup -->
+    <string name="settings_title">Pi-hole &amp; NAS Configuration</string>
+    <string name="settings_host_label">Pi-hole Server IP / Hostname</string>
+    <string name="settings_port_label">Port</string>
+    <string name="settings_https_label">Use HTTPS (SSL/TLS)</string>
+    <string name="settings_password_label">Web API / App Password</string>
+    <string name="settings_password_hint">Encrypted via EncryptedSharedPreferences</string>
+    <string name="settings_nas_ip_label">NAS Management IP</string>
+    <string name="settings_nas_mac_label">NAS MAC Address (for Wake-on-LAN)</string>
+    <string name="settings_nas_name_label">NAS Host Label</string>
+    <string name="settings_test_btn">Test Connection (/api/auth)</string>
+    <string name="settings_save_btn">Save Configuration</string>
+    <string name="settings_demo_mode">Offline Demonstration Mode</string>
+    <string name="settings_demo_mode_desc">Simulate live DNS queries and server statistics when not connected to local NAS</string>
+    <string name="settings_test_success">Connected successfully to %1$s in %2$dms</string>
+    <string name="settings_test_failed">Connection failed: %1$s</string>
+
+    <!-- About & Disclaimer -->
+    <string name="about_title">About &amp; Privacy Transparency</string>
+    <string name="about_ownership_heading">Personal Local Network Administration</string>
+    <string name="about_ownership_body">Network Commander is a personal administration tool designed exclusively for managing your own local Wi-Fi and Ethernet network via your self-hosted Pi-hole DNS sinkhole running on your Network Attached Storage (NAS). You are responsible for configuring and administering your private network environment.</string>
+    <string name="about_encryption_heading">DNS Metadata vs. Encrypted Traffic</string>
+    <string name="about_encryption_body">Important Technical Transparency: Pi-hole only resolves domain names (e.g., example.com) and does NOT have access to the encrypted contents of your network traffic. All HTTPS, TLS, encrypted messaging, and application payloads remain fully encrypted end-to-end between your devices and remote endpoints. Pi-hole and this app can never see passwords, message bodies, video feeds, or search contents.</string>
+    <string name="about_telemetry_heading">How Telemetry Works</string>
+    <string name="about_telemetry_body">The application does not intercept network packets on this Android device. Instead, it reads aggregated DNS statistics and domain queries directly from your Pi-hole REST API at /api/stats/summary and /api/queries over your local Wi-Fi.</string>
+</resources>

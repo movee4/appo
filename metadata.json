@@ -1,0 +1,8 @@
+{
+  "name": "Network Commander",
+  "description": "Personal Network Admin Tool to manage and monitor local Wi-Fi networks integrated with a Pi-hole server on NAS, featuring real-time DNS telemetry, query logs, blocking controls, and local host diagnostics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
